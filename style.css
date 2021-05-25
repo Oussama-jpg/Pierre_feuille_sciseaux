@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background: radial-gradient(
+    circle at 50% 10%,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  font-family: "Barlow Semi Condensed";
+  min-height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  align-items: center;
+  padding: 0px 25px;
+  margin: auto;
+  width: 600px;
+  justify-content: space-between;
+  display: flex;
+  border: 4px solid hsl(0, 0%, 100%, 0.2);
+  border-radius: 1em;
+}
+.score-container {
+  background-color: white;
+  width: 110px;
+  height: 90px;
+  border-radius: 0.5em;
+  text-align: center;
+  margin: 10px 0px;
+}
+span {
+  margin: -5px 0px;
+}
+.score-text {
+  font-size: 1.2em;
+  color: hsl(229, 64%, 46%);
+}
+#score {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: hsl(229, 25%, 31%);
+}
+.btn-rules {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.9em;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border: 2px solid hsl(0, 0%, 100%, 0.2);
+  background-color: transparent;
+  padding: 5px 25px;
+}
+.btn-choice {
+  border: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+}
+.choice-container {
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  box-shadow: inset 0 7px 0px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  display: inline-flex;
+}
+
+.btn-paper {
+  background: linear-gradient(
+    to bottom,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+}
+.btn-scissors {
+  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.btn-rock {
+  background: linear-gradient(
+    to bottom,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+  margin: auto;
+}
+
+.btn-choice:active {
+  animation: click 0.2s forwards;
+}
+@keyframes click {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btn-rules:hover {
+  border-color: white;
+}
+.btn-rules:active {
+  animation: click 0.2s forwards;
+}
+.selection {
+  margin: auto;
+  width: 800px;
+  margin-top: 100px;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.btn-reset {
+  font-size: 1.3em;
+  color: hsl(229, 25%, 31%);
+  border: 2px solid white !important;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border: 2px solid;
+  background-color: #fff;
+  padding: 5px 25px;
+  font-weight: 700;
+}
+.try-again {
+  margin-right: -45px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.text {
+  text-transform: uppercase;
+  font-size: 4em;
+}
+.selection .btn-choice {
+  transform: scale(1.3);
+}
+.selection h2 {
+  font-size: 1.7em;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.selection .btn-choice:active {
+  animation: none;
+}
+.btn-reset:active {
+  animation: click 0.2s forwards;
+}
+.btn-reset:hover {
+  color: white;
+  background-color: transparent;
+  transition: color 0.3s, background-color 0.3s;
+}

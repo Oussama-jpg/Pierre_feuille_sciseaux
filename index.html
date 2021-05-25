@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.min.js" defer></script>
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+      <div class="score-container">
+        <p class="score-text">score</p>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+    <main >
+      <div class="choice-container" id="main">
+        <button class="btn-choice btn-paper pick" data-choice="paper">
+          <span class="wrapper">
+            <img
+              src="/images/icon-paper.svg"
+              alt="Logo du signe papier avec la main"
+              title="logo papier"
+          /></span>
+        </button>
+        <button class="btn-choice btn-scissors pick" data-choice="scissors">
+          <span class="wrapper">
+            <img
+              src="/images/icon-scissors.svg"
+              alt="Logo du signe sciseaux avec la main"
+              title="logo sciseaux"
+          /></span>
+        </button>
+        <button class="btn-choice btn-rock pick" data-choice="rock">
+          <span class="wrapper">
+            <img
+              src="/images/icon-rock.svg"
+              alt="Logo du signe pierre avec la main"
+              title="logo pierre"
+            />
+          </span>
+        </button>
+      </div>
+    </main!-->
+
+    <div class="selection" id="selection">
+      <div>
+        <h2 class="title">You picked</h2>
+        <button class="btn-choice btn-paper" id="user_select">
+          <span class="wrapper">
+            <img
+              src="/images/icon-paper.svg"
+              alt="Logo du signe papier avec la main"
+              title="logo papier"
+          /></span>
+        </button>
+      </div>
+      <div class="try-again">
+        <p class="text" id="winner">You Win</p>
+        <button id="reset" class="btn-reset">Play again</button>
+      </div>
+      <div>
+        <h2 class="title">The house picked</h2>
+        <button class="btn-choice btn-rock" id="computer_select">
+          <span class="wrapper">
+            <img
+              src="/images/icon-rock.svg"
+              alt="Logo du signe pierre avec la main"
+              title="logo pierre"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <button class="btn-rules">Rules</button>
+    </footer>
+  </body>
+</html>
