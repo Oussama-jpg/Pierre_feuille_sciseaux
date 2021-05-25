@@ -61,7 +61,7 @@
     selectionEL.classList.remove("btn-paper", "btn-rock", "btn-scissors");
     const img = selectionEL.querySelector("img");
     selectionEL.classList.add(`btn-${choice}`);
-    img.src = `/images/icon-${choice}.svg`;
+    img.src = `./images/icon-${choice}.svg`;
     img.alt = choice;
   }
 })();
